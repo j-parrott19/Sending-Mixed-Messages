@@ -1,6 +1,4 @@
 import defFunctions from "./functions.js";
-import defSigns from "./objects.js";
-import { userHorroscope } from "./objects.js";
 
 let userDate = document.getElementById("dateInput");
 

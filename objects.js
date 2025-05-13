@@ -161,5 +161,4 @@ let signPictures = {
     Aquarius: "https://example.com/aquarius.jpg",
     Pisces: "https://example.com/pisces.jpg"
 }
-export default defSigns;
-export { userHorroscope };
+export { defSigns, userHorroscope, signPictures };
