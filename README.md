@@ -1,9 +1,9 @@
-# Portfolio Project 1: **Unnamed Project**
+# Portfolio Project 1: Sending Mixed Messages
 
 ## Description
-
+    The basic concept of this program is to take a user's input (in this case, a user's birthdate) and return specialized, random results based on the input. For example, if a person has a birthday on September 5th, that user would receive a result intended for persons within the "Virgo" birthdate range. This application functions as a duplicate to many other online horroscope programs on the Internet, except it will cater to users who are unfamiliar with astrological concepts. 
 ## How to Use
-
+    The user will select their birthdate using an HTML form POST. The program will indetify the correct information for the user from a list of switch cases. Once identified, the program will run a Math.random() function to return a random horroscope for the user, display their birthsign, a picture of their birthsign, and display their result. 
 ## Dependencies
 
 ## Libraries
