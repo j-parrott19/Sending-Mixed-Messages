@@ -27,6 +27,15 @@ let defFunctions = {
         return defSigns[sign];
     },
 
+    randomHoroscope: function (sign) {
+        let horroscope = userHorroscope[sign];
+        if (horroscope) {
+            let randomIndex = Math.floor(Math.random() * horroscope.length);
+            return horroscope[randomIndex];
+        } else {
+            return "No horoscope available for this sign.";
+        }
+    }
 }
 
 export default defFunctions;

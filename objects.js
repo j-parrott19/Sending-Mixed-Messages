@@ -133,19 +133,33 @@ let defSigns = {
     }
 }
 let userHorroscope = {
-    Aries: [],
-    Taurus: [],
-    Gemini: [],
-    Cancer: [],
-    Leo: [],
-    Virgo: [],
-    Libra: [],
-    Scorpio: [],
-    Sagittarius: [],
-    Capricorn: [],
-    Aquarius: [],
-    Pisces: []
+    Aries: ["Test 1", "Test 2"],
+    Taurus: ["Test 3", "Test 4"],
+    Gemini: ["Test 5", "Test 6"],
+    Cancer: ["Test 7", "Test 8"],
+    Leo: ["Test 9", "Test 10"],
+    Virgo: ["Test 11", "Test 12"],
+    Libra: ["Test 13", "Test 14"],
+    Scorpio: ["Test 15", "Test 16"],
+    Sagittarius: ["Test 17", "Test 18"],
+    Capricorn: ["Test 19", "Test 20"],
+    Aquarius: ["Test 21", "Test 22"],
+    Pisces: ["Test 23", "Test 24"]
 }
 
+let signPictures = {
+    Aries: "https://example.com/aries.jpg",
+    Taurus: "https://example.com/taurus.jpg",
+    Gemini: "https://example.com/gemini.jpg",
+    Cancer: "https://example.com/cancer.jpg",
+    Leo: "https://example.com/leo.jpg",
+    Virgo: "https://example.com/virgo.jpg",
+    Libra: "https://example.com/libra.jpg",
+    Scorpio: "https://example.com/scorpio.jpg",
+    Sagittarius: "https://example.com/sagittarius.jpg",
+    Capricorn: "https://example.com/capricorn.jpg",
+    Aquarius: "https://example.com/aquarius.jpg",
+    Pisces: "https://example.com/pisces.jpg"
+}
 export default defSigns;
 export { userHorroscope };

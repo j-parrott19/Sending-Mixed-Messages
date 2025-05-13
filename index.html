@@ -16,6 +16,7 @@
     <h2 id="subtitle" class="subhead" name="subtitle">
         An application by Joseph Parrott
     </h2>
+    <br>
     <div id="content" class="content">
         <p>
             This is a simple web page that demonstrates the use of HTML, CSS, and JavaScript.
@@ -26,9 +27,13 @@
     <div>  
         <form id="dateForm" name="dateForm" action="javascript:void(0);">
             <label for="dateInput">Enter your birthday:</label>
-            <input type="date" id="dateInput" name="dateInput">
-            <input type="submit" value="Submit">
+            <input type="date" id="dateInput" name="dateInput" required>
+            <input type="submit" value="Submit" id="Submit" name="Submit">
         </form>
+    </div>
+    <div id="output" class="output" name="output" style="display: none;">
+        <p id="outputText" class="outputText" name="outputText">
+        </p>    
     </div>
 </body>
 </html>
