@@ -12,8 +12,13 @@ btn1.addEventListener("click", function () {
     let signInfo = defFunctions.getSignInfo(sign);
     let horoscope = defFunctions.randomHoroscope(sign);
 
-    document.getElementById("sign").innerHTML = "Your Zodiac Sign: " + sign;
-    document.getElementById("info").innerHTML = "Sign Information: " + JSON.stringify(signInfo, null, 2);
-    document.getElementById("horoscope").innerHTML = "Your Horoscope: " + horoscope;
     document.getElementById("display").style.display = "block";
+    document.getElementById("sign").innerHTML = "Your Zodiac Sign: " + sign;
+    document.getElementById("element").innerHTML = "Element: " + signInfo.element;
+    document.getElementById("quality").innerHTML = "Quality: " + signInfo.quality;
+    document.getElementById("color").innerHTML = "Color: " + signInfo.color;
+    document.getElementById("rulingPlanet").innerHTML = "Ruling Planet: " + signInfo.rulingPlanet;
+    document.getElementById("symbol").innerHTML = "Symbol: " + signInfo.symbol;
+    document.getElementById("compatibility").innerHTML = "Compatibility: " + signInfo.compatibility;
+    document.getElementById("horoscope").innerHTML = "Your Horoscope: " + horoscope;
 })
