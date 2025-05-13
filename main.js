@@ -11,7 +11,7 @@ btn1.addEventListener("click", function () {
     let signInfo = defFunctions.getSignInfo(sign);
     let horoscope = defFunctions.randomHoroscope(sign);
 
-    document.getElementById("display").style.display = "block";
+    document.getElementById("output").style.display = "block";
     document.getElementById("sign").innerHTML = "Your Zodiac Sign: " + sign;
     document.getElementById("element").innerHTML = "Element: " + signInfo.element;
     document.getElementById("quality").innerHTML = "Quality: " + signInfo.quality;
