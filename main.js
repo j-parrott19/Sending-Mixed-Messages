@@ -5,7 +5,8 @@ let userDate = document.getElementById("dateInput");
 
 let btn1 = document.getElementById("Submit");
 
-btn1.addEventListener("click", function () {
+btn1.addEventListener("submit", function (event) {
+    event.preventDefault();
     let date = new Date(userDate.value);
     let sign = defFunctions.getSign(date);
     let signInfo = defFunctions.getSignInfo(sign);
