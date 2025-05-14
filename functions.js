@@ -1,7 +1,6 @@
-import defSigns from "./objects.js";
 // Imports the sign defitions as object keys and their information as values.
 // The object contains the start and end dates of each sign, as well as its information.
-import { userHorroscope } from "./objects.js";
+import { userHorroscope, defSigns, signPictures } from "./objects.js";
 // This file contains the functions that will be used to get the horoscope sign and its information
 // It will also contain the functions that will be used to get the horoscope for a specific sign
 
@@ -35,6 +34,10 @@ let defFunctions = {
         } else {
             return "No horoscope available for this sign.";
         }
+    },
+
+    getSignPicture: function (sign) {
+        return signPictures[sign];
     }
 }
 
