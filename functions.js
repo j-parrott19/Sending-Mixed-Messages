@@ -9,18 +9,33 @@ let defFunctions = {
     // This function takes a date as input and returns the horoscope sign for that date.
     // The date is pulled from the date input field in the HTML file.
     getSign: function (date) {
-        let month = date.getMonth() + 1;
-        let day = date.getDate();
-        for (let sign in defSigns) {
-            if (
-                (month === defSigns[sign].start.getMonth() + 1 && day >= defSigns[sign].start.getDate()) ||
-                (month === defSigns[sign].end.getMonth() + 1 && day <= defSigns[sign].end.getDate())
-            ) {
-                return sign;
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+
+    for (let sign in defSigns) {
+        const start = defSigns[sign].start;
+        const end = defSigns[sign].end;
+        const startMonth = start.getMonth() + 1;
+        const startDay = start.getDate();
+        const endMonth = end.getMonth() + 1;
+        const endDay = end.getDate();
+        const afterStart = (month > startMonth) || (month === startMonth && day >= startDay);
+        const beforeEnd = (month < endMonth) || (month === endMonth && day <= endDay);
+
+        if (startMonth <= endMonth) {
+            // Sign doesn't cross year boundary
+            if (afterStart && beforeEnd) {
+                return sign.charAt(0).toUpperCase() + sign.slice(1).toLowerCase();
+            }
+        } else {
+            // Sign crosses year boundary (e.g., Capricorn: Dec 22 - Jan 19)
+            if (afterStart || beforeEnd) {
+                return sign.charAt(0).toUpperCase() + sign.slice(1).toLowerCase();
             }
         }
-        return null;
-    },
+    }
+    return "Unknown"; // Fallback
+},
 
     getSignInfo: function (sign) {
         return defSigns[sign];
@@ -40,5 +55,6 @@ let defFunctions = {
         return signPictures[sign];
     }
 }
+
 
 export default defFunctions;

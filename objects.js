@@ -132,33 +132,84 @@ let defSigns = {
         compatibility: "Virgo, Cancer, Scorpio"
     }
 }
-let userHorroscope = {
-    Aries: ["Test 1", "Test 2"],
-    Taurus: ["Test 3", "Test 4"],
-    Gemini: ["Test 5", "Test 6"],
-    Cancer: ["Test 7", "Test 8"],
-    Leo: ["Test 9", "Test 10"],
-    Virgo: ["Test 11", "Test 12"],
-    Libra: ["Test 13", "Test 14"],
-    Scorpio: ["Test 15", "Test 16"],
-    Sagittarius: ["Test 17", "Test 18"],
-    Capricorn: ["Test 19", "Test 20"],
-    Aquarius: ["Test 21", "Test 22"],
-    Pisces: ["Test 23", "Test 24"]
-}
+export const userHorroscope = {
+  Aries: [
+    "The fire in your soul burns brightest today—be bold in your pursuits.",
+    "A new challenge approaches; rise to it with your trademark courage.",
+    "Patience may test you, but swift action will bring clarity."
+  ],
+  Taurus: [
+    "Ground yourself in the familiar today—it will bring unexpected comfort.",
+    "A small luxury can transform your whole mood. Indulge without guilt.",
+    "Steady persistence will open a door long closed."
+  ],
+  Gemini: [
+    "Curiosity leads to an illuminating conversation—listen closely.",
+    "Your wit is sharper than usual today—use it wisely.",
+    "A duality in your heart seeks resolution. Find stillness to choose."
+  ],
+  Cancer: [
+    "Emotions rise like a tide—don’t fear their depths.",
+    "Nurture yourself first, and others will follow your gentle lead.",
+    "A memory resurfaces to remind you of your strength."
+  ],
+  Leo: [
+    "The spotlight finds you—embrace it with confidence, not ego.",
+    "Pride can guard your heart, but vulnerability holds more power today.",
+    "Your leadership inspires more than you know—use it to uplift."
+  ],
+  Virgo: [
+    "A puzzle in your life begins to solve itself—trust the process.",
+    "Your attention to detail brings unseen beauty into the light.",
+    "An act of quiet service may have a greater impact than bold gestures."
+  ],
+  Libra: [
+    "Balance is not perfection. Let go of the need to please everyone.",
+    "A relationship finds harmony through a simple truth shared.",
+    "Your sense of justice guides someone in need—speak up."
+  ],
+  Scorpio: [
+    "Secrets swirl today—discernment will reveal the truth.",
+    "Your passion cuts deep. Channel it toward something sacred.",
+    "Transformation is near. Let go of the shell you’ve outgrown."
+  ],
+  Sagittarius: [
+    "Adventure calls from an unexpected place. Follow the spark.",
+    "Your restless spirit needs direction—seek wisdom, not escape.",
+    "A philosophy you've outgrown is ready to evolve."
+  ],
+  Capricorn: [
+    "Build quietly today. The foundation matters more than praise.",
+    "A long-term goal receives a sign of progress—keep climbing.",
+    "Discipline may feel heavy, but its reward is near."
+  ],
+  Aquarius: [
+    "An idea strikes like lightning—don’t wait to share it.",
+    "Someone unusual crosses your path. Embrace their difference.",
+    "Innovation blossoms when you break your own rules."
+  ],
+  Pisces: [
+    "Dreams reveal more than logic today—listen to your inner world.",
+    "A gentle gesture may heal a wound you didn’t know you carried.",
+    "Flow with the current instead of swimming against it. Trust it will carry you."
+  ]
+};
 
-let signPictures = {
-    Aries: "https://example.com/aries.jpg",
-    Taurus: "https://example.com/taurus.jpg",
-    Gemini: "https://example.com/gemini.jpg",
-    Cancer: "https://example.com/cancer.jpg",
-    Leo: "https://example.com/leo.jpg",
-    Virgo: "https://example.com/virgo.jpg",
-    Libra: "https://example.com/libra.jpg",
-    Scorpio: "https://example.com/scorpio.jpg",
-    Sagittarius: "https://example.com/sagittarius.jpg",
-    Capricorn: "https://example.com/capricorn.jpg",
-    Aquarius: "https://example.com/aquarius.jpg",
-    Pisces: "https://example.com/pisces.jpg"
-}
-export { defSigns, userHorroscope, signPictures };
+
+export const signPictures = {
+  Aries: "./images/aries.svg",
+  Taurus: "./images/taurus.svg",
+  Gemini: "./images/gemini.svg",
+  Cancer: "./images/cancer.svg",
+  Leo: "./images/leo.svg",
+  Virgo: "./images/virgo.svg",
+  Libra: "./images/libra.svg",
+  Scorpio: "./images/scorpio.svg",
+  Sagittarius: "./images/sagittarius.svg",
+  Capricorn: "./images/capricorn.svg",
+  Aquarius: "./images/aquarius.svg",
+  Pisces: "./images/pisces.svg"
+};
+
+
+export { defSigns };

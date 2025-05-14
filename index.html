@@ -4,7 +4,6 @@
     <title>My Web Page</title>
     <link rel="stylesheet" href="refsheet.css">
     <script type="module" src="main.js"></script>
-
 </head>
 <body>
     <h1 id="title" class="headers" name="title">
@@ -23,23 +22,27 @@
         </p>
     <div>  
         <form id="dateForm" name="dateForm" class="dateForm" value="dateForm">
-            <label for="dateInput" id="dateInput" name="dateInput">Enter your birthday:</label>
-            <input type="date" id="dateInput" name="dateInput" value="date" required>
+            <label for="dateInput">Enter your birthday:</label>
+            <input type="date" id="dateInput" name="dateInput" required>
+            <br>
             <input type="submit" value="Submit" id="Submit" name="Submit">
         </form>
     </div>
     <div id="output" class="output" name="output" style="display: none;">
         <p id="sign" class="sign"></p>
-        <p id="info" class="info">
-            <ul>
-                <li>Element: <span id="element"></span></li>
-                <li>Color: <span id="color"></span></li>
-                <li>Compatibility: <span id="compatibility"></span></li>
-                <li>Ruling Planet: <span id="ruling"></span></li>
-                <li>Quality: <span id="quality"></span></li>
-                <li>Symbol: <span id="symbol"></span></li>
-            </ul>
-        </p>
+        <div id="picture" class="picture">
+            <img id="signImage" alt="Zodiac Sign Image" src="" style="width: 100px; height: auto;">
+        </div>
+        <div id="info" class="info">
+    <ul>
+        <li>Element: <span id="element"></span></li>
+        <li>Color: <span id="color"></span></li>
+        <li>Compatibility: <span id="compatibility"></span></li>
+        <li>Ruling Planet: <span id="ruling"></span></li>
+        <li>Quality: <span id="quality"></span></li>
+        <li>Symbol: <span id="symbol"></span></li>
+    </ul>
+</div>
         <br>
         <p id="horoscope" class="horoscope"></p>  
     </div>
